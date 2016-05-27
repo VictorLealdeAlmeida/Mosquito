@@ -34,15 +34,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-XZ-qME">
-                                <rect key="frame" x="119" y="281" width="136" height="30"/>
-                                <state key="normal" title="Perigo agora"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQx-cb-c2J">
                                 <rect key="frame" x="119" y="326" width="136" height="30"/>
                                 <state key="normal" title="Perigo na Cidade"/>
                                 <connections>
                                     <segue destination="GQ2-76-RH0" kind="show" id="MlL-rd-rmj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-XZ-qME">
+                                <rect key="frame" x="119" y="281" width="136" height="30"/>
+                                <state key="normal" title="Perigo agora"/>
+                                <connections>
+                                    <segue destination="TyO-y1-lNd" kind="show" id="T2H-1N-Pwp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,6 +58,25 @@
             </objects>
             <point key="canvasLocation" x="-297" y="291"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="tmp-fj-ukv">
+            <objects>
+                <viewController id="TyO-y1-lNd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fQK-dk-tIn"/>
+                        <viewControllerLayoutGuide type="bottom" id="gTH-42-HKE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5ll-rS-o8Z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jYn-do-Xd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295.5" y="-71.5"/>
+        </scene>
         <!--Mapa Agora View Controller-->
         <scene sceneID="Q03-8x-FQT">
             <objects>
@@ -64,23 +86,23 @@
                         <viewControllerLayoutGuide type="bottom" id="H4P-n7-p3E"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hEF-Ta-IZW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="84J-4h-JEn">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapa" destination="84J-4h-JEn" id="Na4-cc-vWj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gww-ba-pAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="296" y="692"/>
+            <point key="canvasLocation" x="295.5" y="691.5"/>
         </scene>
     </scenes>
 </document>
