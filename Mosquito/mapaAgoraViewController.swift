@@ -52,17 +52,22 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate {
             criarPonto.title = regions[i]
             criarPonto.coordinate = CLLocationCoordinate2DMake(latitudes[i], longitudes[i])
             mapa.addAnnotation(criarPonto)
-            
+            let circle = MKCircle(centerCoordinate: CLLocationCoordinate2DMake(latitudes[i], longitudes[i]), radius: 1422)
+            self.mapa.addOverlay(circle)
             i = i + 1
             
         }
-        
-        
        
     }
     
-    
-    
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer {
+        
+        let circleRenderer = MKCircleRenderer(overlay: overlay)
+        circleRenderer.fillColor = UIColor.blueColor().colorWithAlphaComponent(0.1)
+        circleRenderer.strokeColor = UIColor.blueColor()
+        circleRenderer.lineWidth = 1
+        return circleRenderer
+    }
 
     
     override func didReceiveMemoryWarning() {
