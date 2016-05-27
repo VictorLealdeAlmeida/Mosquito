@@ -15,7 +15,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="show" id="Jfm-XI-JLc"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ROv-oR-sfr"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxC-pU-dPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -33,13 +33,46 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-XZ-qME">
+                                <rect key="frame" x="139" y="284" width="136" height="30"/>
+                                <state key="normal" title="Perigo agora"/>
+                                <connections>
+                                    <segue destination="GQ2-76-RH0" kind="show" id="HkF-mC-TNn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQx-cb-c2J">
+                                <rect key="frame" x="139" y="328" width="136" height="30"/>
+                                <state key="normal" title="Perigo na Cidade"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="5Uo-IL-lZm"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-297" y="291"/>
+        </scene>
+        <!--Mapa Agora View Controller-->
+        <scene sceneID="Q03-8x-FQT">
+            <objects>
+                <viewController id="GQ2-76-RH0" customClass="mapaAgoraViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Lsr-wP-MfY"/>
+                        <viewControllerLayoutGuide type="bottom" id="H4P-n7-p3E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hEF-Ta-IZW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gww-ba-pAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="291"/>
         </scene>
     </scenes>
 </document>

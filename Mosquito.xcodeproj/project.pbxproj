@@ -14,6 +14,7 @@
 		D41CDF0E1CF8E2D600772446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF0C1CF8E2D600772446 /* LaunchScreen.storyboard */; };
 		D41CDF191CF8E2D700772446 /* MosquitoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF181CF8E2D700772446 /* MosquitoTests.swift */; };
 		D41CDF241CF8E2D700772446 /* MosquitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF231CF8E2D700772446 /* MosquitoUITests.swift */; };
+		D41CDF321CF8E60300772446 /* mapaAgoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF311CF8E60300772446 /* mapaAgoraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D41CDF1F1CF8E2D700772446 /* MosquitoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MosquitoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41CDF231CF8E2D700772446 /* MosquitoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MosquitoUITests.swift; sourceTree = "<group>"; };
 		D41CDF251CF8E2D700772446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41CDF311CF8E60300772446 /* mapaAgoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapaAgoraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				D41CDF031CF8E2D600772446 /* AppDelegate.swift */,
 				D41CDF051CF8E2D600772446 /* ViewController.swift */,
 				D41CDF071CF8E2D600772446 /* Main.storyboard */,
+				D41CDF311CF8E60300772446 /* mapaAgoraViewController.swift */,
 				D41CDF0A1CF8E2D600772446 /* Assets.xcassets */,
 				D41CDF0C1CF8E2D600772446 /* LaunchScreen.storyboard */,
 				D41CDF0F1CF8E2D600772446 /* Info.plist */,
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41CDF061CF8E2D600772446 /* ViewController.swift in Sources */,
+				D41CDF321CF8E60300772446 /* mapaAgoraViewController.swift in Sources */,
 				D41CDF041CF8E2D600772446 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
