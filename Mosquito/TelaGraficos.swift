@@ -24,25 +24,11 @@ class TelaGraficosViewController: UIViewController {
     var casoPorKMV: String!
 
     
-    /*class Informacoes:  NSObject {
-        var bairroCidade: String?
-        var ultimosCasos: String?
-        var ultimosAnos: String?
-        var casoPorKM: String?
-
-        init(bairroCidade:String , ultimosCasos:String, ultimosAnos:String , casoPorKM:String) {
-            self.bairroCidade = bairroCidade
-            self.ultimosCasos = ultimosCasos
-            self.ultimosAnos = ultimosAnos
-            self.ultimosCasos = casoPorKM
-
-        } }*/
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.barraTermometro.alpha = 0
-        UIView.animateWithDuration(1) {
+        UIView.animateWithDuration(1.5) {
             self.barraTermometro.alpha = 1
         }
         mudarLabels()
@@ -51,9 +37,9 @@ class TelaGraficosViewController: UIViewController {
     
     func mudarLabels(){
         bairroCidade.text = bairroCidadeV
-        ultimosCasos.text = ultimosCasosV
-        ultimosAnos.text = ultimosAnosV
-        casoPorKM.text = casoPorKMV
+        ultimosCasos.text = ultimosCasosV + " CASOS NOS ÚLTIMOS 30 DIAS"
+        ultimosAnos.text = ultimosAnosV + " CASOS DESDE 2014"
+        casoPorKM.text = "CERCA DE " + casoPorKMV + " CASOS POR KM²"
     }
     
     

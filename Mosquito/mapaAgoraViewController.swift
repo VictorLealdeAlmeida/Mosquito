@@ -67,7 +67,7 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
         let startCoord = CLLocationCoordinate2DMake(-8.0524415,-34.92565148689435);
         let adjustedRegion = mapa.regionThatFits(MKCoordinateRegionMakeWithDistance(startCoord, 1000, 1000))
         mapa.setRegion(adjustedRegion, animated: true)
-        mapa.addAnnotation(Lugar(title:"Jump Brasil", subtitle: "", coordinate:startCoord))
+    
         
         var i = 0
         while(i < regions.count){
@@ -113,7 +113,7 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         print(view.annotation?.title)
         let ind = acharIndice(view.annotation!.title!!)
-        self.performSegueWithIdentifier("verDetalhes", sender: ["bairroCidadeV" : regions[ind] + ",RECIFE, PE", "ultimosCasosV" : "12", "ultimosAnosV" : "332", "casoPorKMV" : "12"])
+        self.performSegueWithIdentifier("verDetalhes", sender: ["bairroCidadeV" : String(regions[ind]) + ",RECIFE, PE", "ultimosCasosV" : String(Int(weights[ind])), "ultimosAnosV" : String(Int(weights[ind])), "casoPorKMV" : String(Int(weights[ind]/areas[ind]))])
     }
     
     func acharIndice(nome : String) -> Int{
