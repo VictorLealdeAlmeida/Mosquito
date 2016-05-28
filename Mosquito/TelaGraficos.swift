@@ -13,6 +13,12 @@ class TelaGraficosViewController: UIViewController {
     
     @IBOutlet weak var barraTermometro: UIView!
     
+    @IBOutlet weak var bairroCidade: UILabel!
+    @IBOutlet weak var ultimosCasos: UILabel!
+    @IBOutlet weak var ultimosAnos: UILabel!
+    @IBOutlet weak var casoPorKM: UILabel!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

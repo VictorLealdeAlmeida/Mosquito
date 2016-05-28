@@ -16,6 +16,9 @@
 		D41CDF241CF8E2D700772446 /* MosquitoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF231CF8E2D700772446 /* MosquitoUITests.swift */; };
 		D41CDF321CF8E60300772446 /* mapaAgoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF311CF8E60300772446 /* mapaAgoraViewController.swift */; };
 		D41CDF351CF9268800772446 /* TelaGraficos.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF341CF9268800772446 /* TelaGraficos.swift */; };
+		D41CDF3F1CF944D200772446 /* magic-term-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF3E1CF944D200772446 /* magic-term-mask.png */; };
+		D41CDF431CF947A500772446 /* mosquitometro_pin-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF421CF947A500772446 /* mosquitometro_pin-gray.png */; };
+		D41CDF451CF94A5400772446 /* BEBASNEUE.OTF in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF441CF94A5400772446 /* BEBASNEUE.OTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		D41CDF251CF8E2D700772446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41CDF311CF8E60300772446 /* mapaAgoraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mapaAgoraViewController.swift; sourceTree = "<group>"; };
 		D41CDF341CF9268800772446 /* TelaGraficos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TelaGraficos.swift; sourceTree = "<group>"; };
+		D41CDF3E1CF944D200772446 /* magic-term-mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "magic-term-mask.png"; path = "Imagens/magic-term-mask.png"; sourceTree = "<group>"; };
+		D41CDF421CF947A500772446 /* mosquitometro_pin-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mosquitometro_pin-gray.png"; path = "Imagens/mosquitometro_pin-gray.png"; sourceTree = "<group>"; };
+		D41CDF441CF94A5400772446 /* BEBASNEUE.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEBASNEUE.OTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 		D41CDEF71CF8E2D600772446 = {
 			isa = PBXGroup;
 			children = (
+				D41CDF441CF94A5400772446 /* BEBASNEUE.OTF */,
+				D41CDF371CF93D1100772446 /* Imagens */,
 				D41CDF021CF8E2D600772446 /* Mosquito */,
 				D41CDF171CF8E2D700772446 /* MosquitoTests */,
 				D41CDF221CF8E2D700772446 /* MosquitoUITests */,
@@ -104,8 +112,8 @@
 				D41CDF031CF8E2D600772446 /* AppDelegate.swift */,
 				D41CDF051CF8E2D600772446 /* ViewController.swift */,
 				D41CDF311CF8E60300772446 /* mapaAgoraViewController.swift */,
-				D41CDF071CF8E2D600772446 /* Main.storyboard */,
 				D41CDF341CF9268800772446 /* TelaGraficos.swift */,
+				D41CDF071CF8E2D600772446 /* Main.storyboard */,
 				D41CDF0A1CF8E2D600772446 /* Assets.xcassets */,
 				D41CDF0C1CF8E2D600772446 /* LaunchScreen.storyboard */,
 				D41CDF0F1CF8E2D600772446 /* Info.plist */,
@@ -129,6 +137,15 @@
 				D41CDF251CF8E2D700772446 /* Info.plist */,
 			);
 			path = MosquitoUITests;
+			sourceTree = "<group>";
+		};
+		D41CDF371CF93D1100772446 /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				D41CDF3E1CF944D200772446 /* magic-term-mask.png */,
+				D41CDF421CF947A500772446 /* mosquitometro_pin-gray.png */,
+			);
+			name = Imagens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,7 +255,10 @@
 			files = (
 				D41CDF0E1CF8E2D600772446 /* LaunchScreen.storyboard in Resources */,
 				D41CDF0B1CF8E2D600772446 /* Assets.xcassets in Resources */,
+				D41CDF451CF94A5400772446 /* BEBASNEUE.OTF in Resources */,
 				D41CDF091CF8E2D600772446 /* Main.storyboard in Resources */,
+				D41CDF431CF947A500772446 /* mosquitometro_pin-gray.png in Resources */,
+				D41CDF3F1CF944D200772446 /* magic-term-mask.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
