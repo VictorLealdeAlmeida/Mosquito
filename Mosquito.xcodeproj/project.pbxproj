@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BBB07A801CF93EC2000CCD98 /* LFHeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB07A7F1CF93EC2000CCD98 /* LFHeatMap.m */; };
+		BBB07A821CF9887E000CCD98 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB07A811CF9887E000CCD98 /* Information.swift */; };
+		BBB07A841CF98A57000CCD98 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB07A831CF98A57000CCD98 /* RootTabBarController.swift */; };
 		D41CDF041CF8E2D600772446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF031CF8E2D600772446 /* AppDelegate.swift */; };
 		D41CDF061CF8E2D600772446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF051CF8E2D600772446 /* ViewController.swift */; };
 		D41CDF091CF8E2D600772446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF071CF8E2D600772446 /* Main.storyboard */; };
@@ -45,6 +47,8 @@
 		BBB07A7D1CF93EC1000CCD98 /* Mosquito-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mosquito-Bridging-Header.h"; sourceTree = "<group>"; };
 		BBB07A7E1CF93EC2000CCD98 /* LFHeatMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFHeatMap.h; sourceTree = "<group>"; };
 		BBB07A7F1CF93EC2000CCD98 /* LFHeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFHeatMap.m; sourceTree = "<group>"; };
+		BBB07A811CF9887E000CCD98 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
+		BBB07A831CF98A57000CCD98 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		D41CDF001CF8E2D600772446 /* Mosquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mosquito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41CDF031CF8E2D600772446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41CDF051CF8E2D600772446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +99,7 @@
 		D41CDEF71CF8E2D600772446 = {
 			isa = PBXGroup;
 			children = (
+				BBB07A811CF9887E000CCD98 /* Information.swift */,
 				D41CDF441CF94A5400772446 /* BEBASNEUE.OTF */,
 				D41CDF371CF93D1100772446 /* Imagens */,
 				D41CDF021CF8E2D600772446 /* Mosquito */,
@@ -129,6 +134,7 @@
 				D41CDF0C1CF8E2D600772446 /* LaunchScreen.storyboard */,
 				D41CDF0F1CF8E2D600772446 /* Info.plist */,
 				BBB07A7D1CF93EC1000CCD98 /* Mosquito-Bridging-Header.h */,
+				BBB07A831CF98A57000CCD98 /* RootTabBarController.swift */,
 			);
 			path = Mosquito;
 			sourceTree = "<group>";
@@ -298,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D41CDF061CF8E2D600772446 /* ViewController.swift in Sources */,
+				BBB07A841CF98A57000CCD98 /* RootTabBarController.swift in Sources */,
+				BBB07A821CF9887E000CCD98 /* Information.swift in Sources */,
 				D41CDF351CF9268800772446 /* TelaGraficos.swift in Sources */,
 				D49B6EEB1CF9817E0010B6BA /* ReportViewController.swift in Sources */,
 				BBB07A801CF93EC2000CCD98 /* LFHeatMap.m in Sources */,
