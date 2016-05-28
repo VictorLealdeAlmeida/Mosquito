@@ -31,6 +31,13 @@ class TelaGraficosViewController: UIViewController {
         UIView.animateWithDuration(1.5) {
             self.barraTermometro.alpha = 1
         }
+        if bairroCidadeV == nil {
+            let info = Information.areaData(44)
+            self.bairroCidadeV = info["bairroCidadeV"]
+            self.ultimosCasosV = info["ultimosCasosV"]
+            self.ultimosAnosV = info["ultimosAnosV"]
+            self.casoPorKMV = info["casoPorKMV"]
+        }
         mudarLabels()
         
     }

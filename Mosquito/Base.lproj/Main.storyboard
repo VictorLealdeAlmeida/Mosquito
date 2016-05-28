@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NEx-Sl-KfD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jPA-QZ-clP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -14,63 +14,46 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Navigation Controller-->
-        <scene sceneID="gWh-Zm-sDf">
+        <!--Cidade-->
+        <scene sceneID="h5d-y3-tCb">
             <objects>
-                <navigationController id="NEx-Sl-KfD" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iy2-j4-88n">
+                <navigationController id="CKG-gR-fbu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Cidade" id="wpF-63-Svc"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ogA-9e-kUX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ROv-oR-sfr"/>
+                        <segue destination="GQ2-76-RH0" kind="relationship" relationship="rootViewController" id="pZp-F9-tnV"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jxC-pU-dPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nCf-4H-blC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-894" y="291"/>
+            <point key="canvasLocation" x="-2398" y="-288"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Root Tab Bar Controller-->
+        <scene sceneID="VKD-xY-kQR">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQx-cb-c2J">
-                                <rect key="frame" x="119" y="326" width="136" height="30"/>
-                                <state key="normal" title="Perigo na Cidade"/>
-                                <connections>
-                                    <segue destination="GQ2-76-RH0" kind="show" id="MlL-rd-rmj"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoF-XZ-qME">
-                                <rect key="frame" x="119" y="281" width="136" height="30"/>
-                                <state key="normal" title="Perigo agora"/>
-                                <connections>
-                                    <segue destination="jHh-JB-so2" kind="show" id="VAK-pH-hOa"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="5Uo-IL-lZm"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="jPA-QZ-clP" customClass="RootTabBarController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="8if-Ci-Y6d">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CKG-gR-fbu" kind="relationship" relationship="viewControllers" id="NNt-P7-Vo6"/>
+                        <segue destination="1oH-Ez-pb7" kind="relationship" relationship="viewControllers" id="LO8-Tc-mm8"/>
+                        <segue destination="jHh-JB-so2" kind="relationship" relationship="viewControllers" id="xfZ-Se-XG5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8p-ZK-MGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-297" y="291"/>
+            <point key="canvasLocation" x="-3528" y="284"/>
         </scene>
-        <!--Tela Graficos View Controller-->
+        <!--Aqui-->
         <scene sceneID="tmp-fj-ukv">
             <objects>
-                <viewController id="TyO-y1-lNd" customClass="TelaGraficosViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Aqui" id="TyO-y1-lNd" customClass="TelaGraficosViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fQK-dk-tIn"/>
                         <viewControllerLayoutGuide type="bottom" id="gTH-42-HKE"/>
@@ -126,6 +109,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.84313725490196079" green="0.85098039215686272" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Aqui" id="yBA-xi-VEg"/>
+                    <navigationItem key="navigationItem" id="jju-YO-V1c"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bairroCidade" destination="Kkr-gj-aDR" id="Z7K-GQ-r0E"/>
@@ -137,12 +122,29 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYn-do-Xd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="811.5" y="290.5"/>
+            <point key="canvasLocation" x="-16.5" y="522.5"/>
         </scene>
-        <!--Report View Controller-->
+        <!--Aqui-->
+        <scene sceneID="Fyx-wY-kS5">
+            <objects>
+                <navigationController id="1oH-Ez-pb7" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Aqui" id="3UA-uU-F2D"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EXi-8w-cuf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="TyO-y1-lNd" kind="relationship" relationship="rootViewController" id="jdJ-uO-Zrx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dVw-ST-V2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2062" y="500"/>
+        </scene>
+        <!--Denuncie-->
         <scene sceneID="8ny-gg-Xn0">
             <objects>
-                <viewController id="jHh-JB-so2" customClass="ReportViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Denuncie" id="jHh-JB-so2" customClass="ReportViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6fs-hf-iBh"/>
                         <viewControllerLayoutGuide type="bottom" id="c1p-Ee-M3u"/>
@@ -157,6 +159,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Denuncie" id="zX4-93-4wg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapaRep" destination="1sR-t3-PPY" id="JEH-Ps-pug"/>
@@ -164,12 +167,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoK-GR-oin" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1237.5" y="290.5"/>
+            <point key="canvasLocation" x="-2042.5" y="1418.5"/>
         </scene>
-        <!--Mapa Agora View Controller-->
+        <!--Cidade-->
         <scene sceneID="Q03-8x-FQT">
             <objects>
-                <viewController id="GQ2-76-RH0" customClass="mapaAgoraViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Cidade" id="GQ2-76-RH0" customClass="mapaAgoraViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Lsr-wP-MfY"/>
                         <viewControllerLayoutGuide type="bottom" id="H4P-n7-p3E"/>
@@ -184,6 +187,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Cidade" id="wWR-37-9Cs"/>
+                    <navigationItem key="navigationItem" id="YkZ-53-aeE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapa" destination="84J-4h-JEn" id="Na4-cc-vWj"/>
@@ -192,11 +197,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gww-ba-pAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175.5" y="290.5"/>
+            <point key="canvasLocation" x="-792.5" y="-369.5"/>
         </scene>
     </scenes>
     <resources>
         <image name="magic-term-mask.png" width="750" height="1334"/>
         <image name="mosquitometro_pin-gray.png" width="26" height="42"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="80I-ZY-RrO"/>
+    </inferredMetricsTieBreakers>
 </document>
