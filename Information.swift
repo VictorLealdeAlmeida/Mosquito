@@ -16,7 +16,7 @@ class Information {
         let weights30 = Information.weights30();
 
         
-        return ["bairroCidadeV" : String(regions[ind]) + ",RECIFE, PE", "ultimosCasosV" : String(Int(weights30[ind])), "ultimosAnosV" : String(Int(weights[ind])), "casoPorKMV" : String(Int(weights[ind]/(areas[ind]/1000000)))]
+        return ["bairroCidadeV" : String(regions[ind]) + ", RECIFE, PE", "ultimosCasosV" : String(Int(weights30[ind])), "ultimosAnosV" : String(Int(weights[ind])), "casoPorKMV" : String(Int(weights[ind]/(areas[ind]/1000000)))]
     }
     
     static func regions() -> [String] {

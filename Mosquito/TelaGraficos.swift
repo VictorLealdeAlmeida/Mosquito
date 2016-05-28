@@ -44,22 +44,22 @@ class TelaGraficosViewController: UIViewController {
         var frame = barraTermometro.frame
         print(frame.size.height)
         
-        let fator = CGFloat(Double(ultimosAnosV)!/100.0)
+        let fator = CGFloat(Double(ultimosAnosV)!*(0.3+Double(ultimosCasosV)!*(0.7))/70.0)
         frame.origin.y = frame.origin.y + ((1 - fator)*frame.size.height)
         frame.size.height = frame.size.height * fator
 
         if(fator < 1.0/3){
-            barraTermometro.backgroundColor = UIColor.greenColor()
-            risco.textColor = UIColor.greenColor()
+          //  barraTermometro.backgroundColor = UIColor.greenColor()
+           // risco.textColor = UIColor.greenColor()
             risco.text = "RISCO BAIXO"
         }else if (fator < 2.0/3){
-            barraTermometro.backgroundColor = UIColor.greenColor()
-            risco.textColor = UIColor.greenColor()
+            barraTermometro.backgroundColor = UIColor(red: 239/255, green: 142/255, blue: 37/255, alpha: 1.0) /* #ef8e25 */
+            risco.textColor = UIColor(red: 239/255, green: 142/255, blue: 37/255, alpha: 1.0) /* #ef8e25 */
             risco.text = "RISCO MÉDIO"
         }else{
-            barraTermometro.backgroundColor = UIColor.greenColor()
-            risco.textColor = UIColor.greenColor()
-            risco.text = "RISCO ALTA"
+            barraTermometro.backgroundColor = UIColor(red: 231/255, green: 65/255, blue: 39/255, alpha: 1.0) /* #e74127 */
+            risco.textColor = UIColor(red: 231/255, green: 65/255, blue: 39/255, alpha: 1.0) /* #e74127 */
+            risco.text = "RISCO ALTO"
         }
         print(frame.size.height)
     
