@@ -95,9 +95,31 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
         self.heatView.image = heatImage;
         self.view.addSubview(heatView)
         
-        getNeighbourhoodDetailsFromAPI()
-       
-    } 
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) ->
+        MKAnnotationView {
+            let identifier = "viewLugar"
+            var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView
+            if annotationView == nil
+            {
+                let detailButton: UIButton = UIButton(type: UIButtonType.DetailDisclosure)
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView!.canShowCallout = true
+                annotationView!.animatesDrop = true
+                annotationView!.image = UIImage(named: "pino.png")
+                annotationView!.rightCalloutAccessoryView = detailButton
+            }
+            
+            annotationView!.annotation = annotation
+            return annotationView!
+    }
+    
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let ac = UIAlertController(title: "Mensagem", message: "O balãozinho pode disparar uma ação", preferredStyle: .Alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(ac, animated: true, completion: nil)
+    }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locationArray = locations as NSArray
@@ -157,15 +179,12 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
                         }
                     }
                 }
-                print(self.incidenceCounts)
-            } catch {
-                print("error serializing JSON: \(error)")
+                
             }
         }
-        
-        task.resume()
-         */
     }
+    
+    //self.performSegueWithIdentifier("verDetalhes", sender: ["bairroCidadeV" : "IPUTINGA, RECIFE, PE", "ultimosCasosV" : "12", "ultimosAnosV" : "332", "casoPorKMV" : "12")
 
     
     override func didReceiveMemoryWarning() {
