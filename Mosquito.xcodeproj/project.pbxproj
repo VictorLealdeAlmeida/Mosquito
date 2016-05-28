@@ -10,6 +10,14 @@
 		BBB07A801CF93EC2000CCD98 /* LFHeatMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BBB07A7F1CF93EC2000CCD98 /* LFHeatMap.m */; };
 		BBB07A821CF9887E000CCD98 /* Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB07A811CF9887E000CCD98 /* Information.swift */; };
 		BBB07A841CF98A57000CCD98 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB07A831CF98A57000CCD98 /* RootTabBarController.swift */; };
+		BBB07AC11CF9C439000CCD98 /* m-_icon-term@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07AB91CF9C439000CCD98 /* m-_icon-term@2x.png */; };
+		BBB07AC21CF9C439000CCD98 /* m-_icon-term-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07ABA1CF9C439000CCD98 /* m-_icon-term-hover@2x.png */; };
+		BBB07AC31CF9C439000CCD98 /* m-_icon-crosshair@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07ABB1CF9C439000CCD98 /* m-_icon-crosshair@2x.png */; };
+		BBB07AC41CF9C439000CCD98 /* m-_icon-crosshair-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07ABC1CF9C439000CCD98 /* m-_icon-crosshair-hover@2x.png */; };
+		BBB07AC51CF9C439000CCD98 /* m-_icon-chart@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07ABD1CF9C439000CCD98 /* m-_icon-chart@2x.png */; };
+		BBB07AC61CF9C439000CCD98 /* m-_icon-chart-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07ABE1CF9C439000CCD98 /* m-_icon-chart-hover@2x.png */; };
+		BBB07AC71CF9C439000CCD98 /* m-_icon-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07ABF1CF9C439000CCD98 /* m-_icon-map@2x.png */; };
+		BBB07AC81CF9C439000CCD98 /* m-_icon-map-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BBB07AC01CF9C439000CCD98 /* m-_icon-map-hover@2x.png */; };
 		D41CDF041CF8E2D600772446 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF031CF8E2D600772446 /* AppDelegate.swift */; };
 		D41CDF061CF8E2D600772446 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41CDF051CF8E2D600772446 /* ViewController.swift */; };
 		D41CDF091CF8E2D600772446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF071CF8E2D600772446 /* Main.storyboard */; };
@@ -49,6 +57,14 @@
 		BBB07A7F1CF93EC2000CCD98 /* LFHeatMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFHeatMap.m; sourceTree = "<group>"; };
 		BBB07A811CF9887E000CCD98 /* Information.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Information.swift; sourceTree = "<group>"; };
 		BBB07A831CF98A57000CCD98 /* RootTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		BBB07AB91CF9C439000CCD98 /* m-_icon-term@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-term@2x.png"; sourceTree = "<group>"; };
+		BBB07ABA1CF9C439000CCD98 /* m-_icon-term-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-term-hover@2x.png"; sourceTree = "<group>"; };
+		BBB07ABB1CF9C439000CCD98 /* m-_icon-crosshair@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-crosshair@2x.png"; sourceTree = "<group>"; };
+		BBB07ABC1CF9C439000CCD98 /* m-_icon-crosshair-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-crosshair-hover@2x.png"; sourceTree = "<group>"; };
+		BBB07ABD1CF9C439000CCD98 /* m-_icon-chart@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-chart@2x.png"; sourceTree = "<group>"; };
+		BBB07ABE1CF9C439000CCD98 /* m-_icon-chart-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-chart-hover@2x.png"; sourceTree = "<group>"; };
+		BBB07ABF1CF9C439000CCD98 /* m-_icon-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-map@2x.png"; sourceTree = "<group>"; };
+		BBB07AC01CF9C439000CCD98 /* m-_icon-map-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "m-_icon-map-hover@2x.png"; sourceTree = "<group>"; };
 		D41CDF001CF8E2D600772446 /* Mosquito.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mosquito.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41CDF031CF8E2D600772446 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D41CDF051CF8E2D600772446 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +176,14 @@
 		D41CDF371CF93D1100772446 /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				BBB07AB91CF9C439000CCD98 /* m-_icon-term@2x.png */,
+				BBB07ABA1CF9C439000CCD98 /* m-_icon-term-hover@2x.png */,
+				BBB07ABB1CF9C439000CCD98 /* m-_icon-crosshair@2x.png */,
+				BBB07ABC1CF9C439000CCD98 /* m-_icon-crosshair-hover@2x.png */,
+				BBB07ABD1CF9C439000CCD98 /* m-_icon-chart@2x.png */,
+				BBB07ABE1CF9C439000CCD98 /* m-_icon-chart-hover@2x.png */,
+				BBB07ABF1CF9C439000CCD98 /* m-_icon-map@2x.png */,
+				BBB07AC01CF9C439000CCD98 /* m-_icon-map-hover@2x.png */,
 				D41CDF3E1CF944D200772446 /* magic-term-mask.png */,
 				D49B6EEC1CF9860E0010B6BA /* pino-magico-25.png */,
 				D41CDF421CF947A500772446 /* mosquitometro_pin-gray.png */,
@@ -274,11 +298,19 @@
 			files = (
 				D41CDF0E1CF8E2D600772446 /* LaunchScreen.storyboard in Resources */,
 				D41CDF0B1CF8E2D600772446 /* Assets.xcassets in Resources */,
+				BBB07AC31CF9C439000CCD98 /* m-_icon-crosshair@2x.png in Resources */,
+				BBB07AC21CF9C439000CCD98 /* m-_icon-term-hover@2x.png in Resources */,
 				D41CDF451CF94A5400772446 /* BEBASNEUE.OTF in Resources */,
 				D49B6EED1CF9860E0010B6BA /* pino-magico-25.png in Resources */,
+				BBB07AC81CF9C439000CCD98 /* m-_icon-map-hover@2x.png in Resources */,
 				D41CDF091CF8E2D600772446 /* Main.storyboard in Resources */,
 				D41CDF431CF947A500772446 /* mosquitometro_pin-gray.png in Resources */,
 				D41CDF3F1CF944D200772446 /* magic-term-mask.png in Resources */,
+				BBB07AC41CF9C439000CCD98 /* m-_icon-crosshair-hover@2x.png in Resources */,
+				BBB07AC51CF9C439000CCD98 /* m-_icon-chart@2x.png in Resources */,
+				BBB07AC11CF9C439000CCD98 /* m-_icon-term@2x.png in Resources */,
+				BBB07AC71CF9C439000CCD98 /* m-_icon-map@2x.png in Resources */,
+				BBB07AC61CF9C439000CCD98 /* m-_icon-chart-hover@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

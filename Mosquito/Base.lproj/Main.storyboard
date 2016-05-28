@@ -18,7 +18,7 @@
         <scene sceneID="h5d-y3-tCb">
             <objects>
                 <navigationController id="CKG-gR-fbu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Recife" id="wpF-63-Svc"/>
+                    <tabBarItem key="tabBarItem" title="Recife" image="m-_icon-map-hover.png" selectedImage="m-_icon-map-hover.png" id="wpF-63-Svc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ogA-9e-kUX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -134,7 +134,7 @@
         <scene sceneID="Fyx-wY-kS5">
             <objects>
                 <navigationController id="1oH-Ez-pb7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Santo Amaro" id="3UA-uU-F2D"/>
+                    <tabBarItem key="tabBarItem" title="Santo Amaro" image="m-_icon-term.png" selectedImage="m-_icon-term-hover.png" id="3UA-uU-F2D"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EXi-8w-cuf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -162,7 +162,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Denuncie" id="zX4-93-4wg"/>
+                    <tabBarItem key="tabBarItem" title="Denuncie" image="m-_icon-crosshair.png" selectedImage="m-_icon-crosshair-hover.png" id="zX4-93-4wg"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapaRep" destination="1sR-t3-PPY" id="JEH-Ps-pug"/>
@@ -187,7 +187,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Recife" id="wWR-37-9Cs"/>
+                    <tabBarItem key="tabBarItem" title="Recife" selectedImage="mosquitometro-telas-v2_icon-map.png" id="wWR-37-9Cs"/>
                     <navigationItem key="navigationItem" id="YkZ-53-aeE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -201,10 +201,16 @@
         </scene>
     </scenes>
     <resources>
+        <image name="m-_icon-crosshair-hover.png" width="750" height="1334"/>
+        <image name="m-_icon-crosshair.png" width="750" height="1334"/>
+        <image name="m-_icon-map-hover.png" width="50" height="50"/>
+        <image name="m-_icon-term-hover.png" width="750" height="1334"/>
+        <image name="m-_icon-term.png" width="750" height="1334"/>
         <image name="magic-term-mask.png" width="750" height="1334"/>
+        <image name="mosquitometro-telas-v2_icon-map.png" width="30" height="30"/>
         <image name="mosquitometro_pin-gray.png" width="26" height="42"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="80I-ZY-RrO"/>
+        <segue reference="jdJ-uO-Zrx"/>
     </inferredMetricsTieBreakers>
 </document>
