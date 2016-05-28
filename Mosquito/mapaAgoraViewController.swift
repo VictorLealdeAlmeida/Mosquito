@@ -70,9 +70,25 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
             
         }
         
-        getNeighbourhoodDetailsFromAPI()
-       
-    } 
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) ->
+        MKAnnotationView {
+            let identifier = "viewLugar"
+            var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView
+            if annotationView == nil
+            {
+                let detailButton: UIButton = UIButton(type: UIButtonType.DetailDisclosure)
+                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView!.canShowCallout = true
+                annotationView!.animatesDrop = true
+                annotationView!.image = UIImage(named: "pino.png")
+                annotationView!.rightCalloutAccessoryView = detailButton
+            }
+            
+            annotationView!.annotation = annotation
+            return annotationView!
+    }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locationArray = locations as NSArray
@@ -94,44 +110,21 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
         return circleRenderer
     }
     
-    func getNeighbourhoodDetailsFromAPI()  {
-        /*let url = NSURL(string: "http://130.206.119.154:1026/v1/contextEntities?entity::type=Incidence&limit=1000");
-        let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            
-            
-            do {
-                let json = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
-                
-                if let contextResponses = json["contextResponses"] as? [[String: AnyObject]] {
-                    for contextResponse in contextResponses {
-                        if let contextElement = contextResponse["contextElement"] as? [String: AnyObject] {
-                            if let attributes = contextElement["attributes"] as? [[String: AnyObject]] {
-                                for attribute in attributes {
-                                    if let name = attribute["name"] as? String {
-                                        if let value = attribute["value"] as? String {
-                                            if name == "no_bairro_residencia" {
-                                                if (self.incidenceCounts[value] != nil) {
-                                                    self.incidenceCounts[value]! += 1
-                                                } else {
-                                                    self.incidenceCounts[value] = 1
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "verDetalhes"){
+            if let dvc = segue.destinationViewController as? TelaGraficosViewController {
+                if let info = sender as? [String: String] {
+                    dvc.bairroCidadeV = info["bairroCidadeV"]
+                    dvc.ultimosCasosV = info["ultimosCasosV"]
+                    dvc.ultimosAnosV = info["ultimosAnosV"]
+                    dvc.casoPorKMV = info["casoPorKMV"]
                 }
-                print(self.incidenceCounts)
-            } catch {
-                print("error serializing JSON: \(error)")
+                
             }
         }
-        
-        task.resume()
-         */
     }
+    
+    //self.performSegueWithIdentifier("verDetalhes", sender: ["bairroCidadeV" : "IPUTINGA, RECIFE, PE", "ultimosCasosV" : "12", "ultimosAnosV" : "332", "casoPorKMV" : "12")
 
     
     override func didReceiveMemoryWarning() {

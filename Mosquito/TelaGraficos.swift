@@ -18,7 +18,25 @@ class TelaGraficosViewController: UIViewController {
     @IBOutlet weak var ultimosAnos: UILabel!
     @IBOutlet weak var casoPorKM: UILabel!
     
+    var bairroCidadeV: String!
+    var ultimosCasosV: String!
+    var ultimosAnosV: String!
+    var casoPorKMV: String!
+
     
+    /*class Informacoes:  NSObject {
+        var bairroCidade: String?
+        var ultimosCasos: String?
+        var ultimosAnos: String?
+        var casoPorKM: String?
+
+        init(bairroCidade:String , ultimosCasos:String, ultimosAnos:String , casoPorKM:String) {
+            self.bairroCidade = bairroCidade
+            self.ultimosCasos = ultimosCasos
+            self.ultimosAnos = ultimosAnos
+            self.ultimosCasos = casoPorKM
+
+        } }*/
     
     override func viewDidLoad() {
         super.viewDidLoad()

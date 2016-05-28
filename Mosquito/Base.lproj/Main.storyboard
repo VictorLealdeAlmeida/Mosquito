@@ -137,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYn-do-Xd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.5" y="-71.5"/>
+            <point key="canvasLocation" x="823.5" y="-103.5"/>
         </scene>
         <!--Mapa Agora View Controller-->
         <scene sceneID="Q03-8x-FQT">
@@ -160,6 +160,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapa" destination="84J-4h-JEn" id="Na4-cc-vWj"/>
+                        <segue destination="TyO-y1-lNd" kind="show" identifier="verDetalhes" id="80I-ZY-RrO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gww-ba-pAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -171,4 +172,7 @@
         <image name="magic-term-mask.png" width="750" height="1334"/>
         <image name="mosquitometro_pin-gray.png" width="26" height="42"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="80I-ZY-RrO"/>
+    </inferredMetricsTieBreakers>
 </document>
