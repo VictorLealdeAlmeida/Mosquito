@@ -196,7 +196,7 @@
 				TargetAttributes = {
 					D41CDEFF1CF8E2D600772446 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = A975LQD622;
+						DevelopmentTeam = 78DDQ5CQQA;
 					};
 					D41CDF131CF8E2D700772446 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -495,6 +495,7 @@
 				D41CDF2A1CF8E2D700772446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41CDF2B1CF8E2D700772446 /* Build configuration list for PBXNativeTarget "MosquitoTests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +504,7 @@
 				D41CDF2D1CF8E2D700772446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41CDF2E1CF8E2D700772446 /* Build configuration list for PBXNativeTarget "MosquitoUITests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +513,7 @@
 				D41CDF301CF8E2D700772446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
