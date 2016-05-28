@@ -95,11 +95,11 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) ->
         MKAnnotationView {
             let identifier = "viewLugar"
-            var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier) as? MKPinAnnotationView
+            var annotationView = mapView.dequeueReusableAnnotationViewWithIdentifier(identifier)
             if annotationView == nil
             {
                 let detailButton: UIButton = UIButton(type: UIButtonType.DetailDisclosure)
-               annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+                annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView!.canShowCallout = true
                 ///annotationView!.animatesDrop = true
                 annotationView!.image = UIImage(named: "pino-magico-25.png")

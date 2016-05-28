@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jPA-QZ-clP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jPA-QZ-clP">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -29,7 +29,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nCf-4H-blC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2398" y="-288"/>
+            <point key="canvasLocation" x="-1278.9333333333334" y="-272.63999999999999"/>
         </scene>
         <!--Root Tab Bar Controller-->
         <scene sceneID="VKD-xY-kQR">
@@ -48,60 +48,65 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C8p-ZK-MGo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3528" y="284"/>
+            <point key="canvasLocation" x="-1881.5999999999999" y="268.85333333333335"/>
         </scene>
         <!--Aqui-->
         <scene sceneID="tmp-fj-ukv">
             <objects>
                 <viewController title="Aqui" id="TyO-y1-lNd" customClass="TelaGraficosViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fQK-dk-tIn"/>
-                        <viewControllerLayoutGuide type="bottom" id="gTH-42-HKE"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5ll-rS-o8Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0XP-z2-WQb">
+                            <view contentMode="scaleToFill" id="0XP-z2-WQb">
                                 <rect key="frame" x="73" y="221" width="65" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.96862745098039216" green="0.68627450980392157" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magic-term-mask.png" translatesAutoresizingMaskIntoConstraints="NO" id="5CA-Nb-ldB">
-                                <rect key="frame" x="0.0" y="5" width="375" height="662"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magic-term-mask.png" id="5CA-Nb-ldB">
+                                <rect key="frame" x="0.0" y="3" width="375" height="662"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="52f-kY-tVO">
+                            <view contentMode="scaleToFill" id="52f-kY-tVO">
                                 <rect key="frame" x="0.0" y="590" width="375" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.12549019607843137" green="0.5607843137254902" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="142 CASOS NOS ÚLTIMOS 30 DIAS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IfH-O3-ZPG">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="142 CASOS NOS ÚLTIMOS 30 DIAS" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IfH-O3-ZPG">
                                 <rect key="frame" x="170" y="216" width="190" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="27"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mosquitometro_pin-gray.png" translatesAutoresizingMaskIntoConstraints="NO" id="cVC-cA-v5t">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mosquitometro_pin-gray.png" id="cVC-cA-v5t">
                                 <rect key="frame" x="24" y="116" width="14" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RISCO MÉDIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yS8-Qt-IZC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RISCO MÉDIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yS8-Qt-IZC">
                                 <rect key="frame" x="20" y="72" width="302" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="38"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.68627450980000004" blue="0.074509803920000006" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CERCA DE 2 CASOS POR KM²" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JSm-hI-nLs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CERCA DE 2 CASOS POR KM²" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JSm-hI-nLs">
                                 <rect key="frame" x="170" y="403" width="184" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="27"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1000 CASOS DESDE 2014" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eyc-pR-Myj">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000 CASOS DESDE 2014" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Eyc-pR-Myj">
                                 <rect key="frame" x="170" y="307" width="184" height="66"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="27"/>
                                 <color key="textColor" red="0.15686274510000001" green="0.15686274510000001" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IPUTINGA, RECIFE-PE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkr-gj-aDR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IPUTINGA, RECIFE-PE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Kkr-gj-aDR">
                                 <rect key="frame" x="42" y="102" width="302" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BebasNeue" family="Bebas Neue" pointSize="20"/>
                                 <color key="textColor" red="0.15686274509803921" green="0.15686274509803921" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -114,7 +119,7 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="bairroCidade" destination="Kkr-gj-aDR" id="Z7K-GQ-r0E"/>
-                        <outlet property="barraTermometro" destination="0XP-z2-WQb" id="Hfz-JM-rh6"/>
+                        <outlet property="barraTermometro" destination="0XP-z2-WQb" id="SQw-qa-iFR"/>
                         <outlet property="casoPorKM" destination="JSm-hI-nLs" id="lU1-Cb-lg8"/>
                         <outlet property="ultimosAnos" destination="Eyc-pR-Myj" id="UhW-bU-c6O"/>
                         <outlet property="ultimosCasos" destination="IfH-O3-ZPG" id="gTp-TE-iWl"/>
@@ -122,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYn-do-Xd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-16.5" y="522.5"/>
+            <point key="canvasLocation" x="-8.8000000000000007" y="494.63333333333333"/>
         </scene>
         <!--Aqui-->
         <scene sceneID="Fyx-wY-kS5">
@@ -139,22 +144,19 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dVw-ST-V2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2062" y="500"/>
+            <point key="canvasLocation" x="-1099.7333333333333" y="473.33333333333331"/>
         </scene>
         <!--Denuncie-->
         <scene sceneID="8ny-gg-Xn0">
             <objects>
                 <viewController title="Denuncie" id="jHh-JB-so2" customClass="ReportViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6fs-hf-iBh"/>
-                        <viewControllerLayoutGuide type="bottom" id="c1p-Ee-M3u"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="sIf-sy-axb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1sR-t3-PPY">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="1sR-t3-PPY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,22 +169,19 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IoK-GR-oin" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2042.5" y="1418.5"/>
+            <point key="canvasLocation" x="-1089.3333333333333" y="1342.8466666666666"/>
         </scene>
         <!--Cidade-->
         <scene sceneID="Q03-8x-FQT">
             <objects>
                 <viewController title="Cidade" id="GQ2-76-RH0" customClass="mapaAgoraViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Lsr-wP-MfY"/>
-                        <viewControllerLayoutGuide type="bottom" id="H4P-n7-p3E"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="hEF-Ta-IZW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="84J-4h-JEn">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="84J-4h-JEn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,12 +191,12 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mapa" destination="84J-4h-JEn" id="Na4-cc-vWj"/>
-                        <segue destination="TyO-y1-lNd" kind="show" identifier="verDetalhes" id="80I-ZY-RrO"/>
+                        <segue destination="TyO-y1-lNd" kind="push" identifier="verDetalhes" id="80I-ZY-RrO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gww-ba-pAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-792.5" y="-369.5"/>
+            <point key="canvasLocation" x="-422.66666666666669" y="-349.79333333333335"/>
         </scene>
     </scenes>
     <resources>

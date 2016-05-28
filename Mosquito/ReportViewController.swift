@@ -23,9 +23,10 @@ class ReportViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         mapaRep.setRegion(adjustedRegion, animated: true)
     }
 
-    
+    func novoPonto(){
+        
     }
+}
     
     
 
-}

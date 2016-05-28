@@ -40,6 +40,13 @@ class TelaGraficosViewController: UIViewController {
         }
         mudarLabels()
         
+        var frame = barraTermometro.frame
+        print(frame.size.height)
+        
+        frame.size.height = frame.size.height * 0
+      
+        barraTermometro.frame = frame
+        barraTermometro.setNeedsLayout()
     }
     
     func mudarLabels(){
