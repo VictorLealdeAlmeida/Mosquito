@@ -43,7 +43,6 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate {
        
         let locationManager = CLLocationDegrees()
         print(locationManager)
-
         
         mapa.delegate = self
         let startCoord = CLLocationCoordinate2DMake(-8.0524415,-34.8801386);
