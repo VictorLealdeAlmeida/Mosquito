@@ -14,11 +14,11 @@
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--Cidade-->
+        <!--Recife-->
         <scene sceneID="h5d-y3-tCb">
             <objects>
                 <navigationController id="CKG-gR-fbu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cidade" id="wpF-63-Svc"/>
+                    <tabBarItem key="tabBarItem" title="Recife" id="wpF-63-Svc"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ogA-9e-kUX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -114,7 +114,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.84313725490196079" green="0.85098039215686272" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Aqui" id="yBA-xi-VEg"/>
+                    <tabBarItem key="tabBarItem" title="Santo Amaro" id="yBA-xi-VEg"/>
                     <navigationItem key="navigationItem" id="jju-YO-V1c"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
@@ -130,11 +130,11 @@
             </objects>
             <point key="canvasLocation" x="-8.8000000000000007" y="494.63333333333333"/>
         </scene>
-        <!--Aqui-->
+        <!--Santo Amaro-->
         <scene sceneID="Fyx-wY-kS5">
             <objects>
                 <navigationController id="1oH-Ez-pb7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Aqui" id="3UA-uU-F2D"/>
+                    <tabBarItem key="tabBarItem" title="Santo Amaro" id="3UA-uU-F2D"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EXi-8w-cuf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -187,7 +187,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Cidade" id="wWR-37-9Cs"/>
+                    <tabBarItem key="tabBarItem" title="Recife" id="wWR-37-9Cs"/>
                     <navigationItem key="navigationItem" id="YkZ-53-aeE"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
