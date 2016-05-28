@@ -21,6 +21,7 @@
 		D41CDF431CF947A500772446 /* mosquitometro_pin-gray.png in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF421CF947A500772446 /* mosquitometro_pin-gray.png */; };
 		D41CDF451CF94A5400772446 /* BEBASNEUE.OTF in Resources */ = {isa = PBXBuildFile; fileRef = D41CDF441CF94A5400772446 /* BEBASNEUE.OTF */; };
 		D49B6EEB1CF9817E0010B6BA /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49B6EEA1CF9817E0010B6BA /* ReportViewController.swift */; };
+		D49B6EED1CF9860E0010B6BA /* pino-magico-25.png in Resources */ = {isa = PBXBuildFile; fileRef = D49B6EEC1CF9860E0010B6BA /* pino-magico-25.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D41CDF421CF947A500772446 /* mosquitometro_pin-gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mosquitometro_pin-gray.png"; path = "Imagens/mosquitometro_pin-gray.png"; sourceTree = "<group>"; };
 		D41CDF441CF94A5400772446 /* BEBASNEUE.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = BEBASNEUE.OTF; sourceTree = "<group>"; };
 		D49B6EEA1CF9817E0010B6BA /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
+		D49B6EEC1CF9860E0010B6BA /* pino-magico-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pino-magico-25.png"; path = "Imagens/pino-magico-25.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				D41CDF3E1CF944D200772446 /* magic-term-mask.png */,
+				D49B6EEC1CF9860E0010B6BA /* pino-magico-25.png */,
 				D41CDF421CF947A500772446 /* mosquitometro_pin-gray.png */,
 			);
 			name = Imagens;
@@ -266,6 +269,7 @@
 				D41CDF0E1CF8E2D600772446 /* LaunchScreen.storyboard in Resources */,
 				D41CDF0B1CF8E2D600772446 /* Assets.xcassets in Resources */,
 				D41CDF451CF94A5400772446 /* BEBASNEUE.OTF in Resources */,
+				D49B6EED1CF9860E0010B6BA /* pino-magico-25.png in Resources */,
 				D41CDF091CF8E2D600772446 /* Main.storyboard in Resources */,
 				D41CDF431CF947A500772446 /* mosquitometro_pin-gray.png in Resources */,
 				D41CDF3F1CF944D200772446 /* magic-term-mask.png in Resources */,

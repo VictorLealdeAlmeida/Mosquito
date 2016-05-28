@@ -65,7 +65,7 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
         
         mapa.delegate = self
         let startCoord = CLLocationCoordinate2DMake(-8.0524415,-34.92565148689435);
-        let adjustedRegion = mapa.regionThatFits(MKCoordinateRegionMakeWithDistance(startCoord, 1000, 1000))
+        let adjustedRegion = mapa.regionThatFits(MKCoordinateRegionMakeWithDistance(startCoord, 7000, 7000))
         mapa.setRegion(adjustedRegion, animated: true)
     
         
@@ -99,10 +99,10 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
             if annotationView == nil
             {
                 let detailButton: UIButton = UIButton(type: UIButtonType.DetailDisclosure)
-                annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+               annotationView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: identifier)
                 annotationView!.canShowCallout = true
-                annotationView!.animatesDrop = true
-                annotationView!.image = UIImage(named: "pino.png")
+                ///annotationView!.animatesDrop = true
+                annotationView!.image = UIImage(named: "pino-magico-25.png")
                 annotationView!.rightCalloutAccessoryView = detailButton
             }
             

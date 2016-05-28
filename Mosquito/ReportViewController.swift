@@ -19,9 +19,13 @@ class ReportViewController: UIViewController, MKMapViewDelegate, CLLocationManag
      
         mapaRep.delegate = self
         let startCoord = CLLocationCoordinate2DMake(-8.0524415,-34.92565148689435);
-        let adjustedRegion = mapaRep.regionThatFits(MKCoordinateRegionMakeWithDistance(startCoord, 1000, 1000))
+        let adjustedRegion = mapaRep.regionThatFits(MKCoordinateRegionMakeWithDistance(startCoord, 3000, 3000))
         mapaRep.setRegion(adjustedRegion, animated: true)
-        
     }
+
+    
+    }
+    
+    
 
 }
