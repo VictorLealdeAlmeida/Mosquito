@@ -37,7 +37,7 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
     var userCoord:CLLocationCoordinate2D!
     
     var heatView:UIImageView!
-    
+    var selectIndex = 0
     
     override func viewDidLoad() {
  
@@ -80,12 +80,7 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
             var area = areas[i]
             area = sqrt(area)
             area *= 50000;
-            
-            /*if (regions[i] == "GUABIRABA") {
-                area /= 2
-            }*/
-            //let circle = MKCircle(centerCoordinate: CLLocationCoordinate2DMake(latitudes[i], longitudes[i]), radius: area)
-            //self.mapa.addOverlay(circle)
+            selectIndex = i
             i = i + 1
             
         }
@@ -116,9 +111,20 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
     }
     
     func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
-        let ac = UIAlertController(title: "Mensagem", message: "O balãozinho pode disparar uma ação", preferredStyle: .Alert)
-            ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-            presentViewController(ac, animated: true, completion: nil)
+        print(view.annotation?.title)
+        let ind = acharIndice(view.annotation!.title!!)
+        self.performSegueWithIdentifier("verDetalhes", sender: ["bairroCidadeV" : regions[ind] + ",RECIFE, PE", "ultimosCasosV" : "12", "ultimosAnosV" : "332", "casoPorKMV" : "12"])
+    }
+    
+    func acharIndice(nome : String) -> Int{
+        var v = 0
+        while(v < regions.count){
+            if(regions[v] == nome){
+                return v
+            }
+            v = v + 1
+        }
+        return 0
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -162,8 +168,6 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
     func mapView(mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
         self.heatView.image = nil
     }
-    
-    //self.performSegueWithIdentifier("verDetalhes", sender: ["bairroCidadeV" : "IPUTINGA, RECIFE, PE", "ultimosCasosV" : "12", "ultimosAnosV" : "332", "casoPorKMV" : "12")
 
     
     override func didReceiveMemoryWarning() {

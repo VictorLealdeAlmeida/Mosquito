@@ -45,9 +45,16 @@ class TelaGraficosViewController: UIViewController {
         UIView.animateWithDuration(1) {
             self.barraTermometro.alpha = 1
         }
+        mudarLabels()
         
     }
     
+    func mudarLabels(){
+        bairroCidade.text = bairroCidadeV
+        ultimosCasos.text = ultimosCasosV
+        ultimosAnos.text = ultimosAnosV
+        casoPorKM.text = casoPorKMV
+    }
     
     
     override func didReceiveMemoryWarning() {
