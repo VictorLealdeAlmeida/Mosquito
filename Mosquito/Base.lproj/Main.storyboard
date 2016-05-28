@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="-297" y="291"/>
         </scene>
-        <!--View Controller-->
+        <!--Tela Graficos View Controller-->
         <scene sceneID="tmp-fj-ukv">
             <objects>
-                <viewController id="TyO-y1-lNd" sceneMemberID="viewController">
+                <viewController id="TyO-y1-lNd" customClass="TelaGraficosViewController" customModule="Mosquito" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fQK-dk-tIn"/>
                         <viewControllerLayoutGuide type="bottom" id="gTH-42-HKE"/>
@@ -69,9 +69,18 @@
                     <view key="view" contentMode="scaleToFill" id="5ll-rS-o8Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0XP-z2-WQb">
+                                <rect key="frame" x="20" y="148" width="48" height="311"/>
+                                <color key="backgroundColor" red="1" green="0.59850704669952393" blue="0.0040854103863239288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="barraTermometro" destination="0XP-z2-WQb" id="Hfz-JM-rh6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jYn-do-Xd9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
