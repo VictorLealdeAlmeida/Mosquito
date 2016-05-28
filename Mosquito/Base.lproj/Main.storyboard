@@ -121,6 +121,7 @@
                         <outlet property="bairroCidade" destination="Kkr-gj-aDR" id="Z7K-GQ-r0E"/>
                         <outlet property="barraTermometro" destination="0XP-z2-WQb" id="SQw-qa-iFR"/>
                         <outlet property="casoPorKM" destination="JSm-hI-nLs" id="lU1-Cb-lg8"/>
+                        <outlet property="risco" destination="yS8-Qt-IZC" id="Z8Z-ym-fgJ"/>
                         <outlet property="ultimosAnos" destination="Eyc-pR-Myj" id="UhW-bU-c6O"/>
                         <outlet property="ultimosCasos" destination="IfH-O3-ZPG" id="gTp-TE-iWl"/>
                     </connections>

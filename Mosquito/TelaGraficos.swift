@@ -17,6 +17,7 @@ class TelaGraficosViewController: UIViewController {
     @IBOutlet weak var ultimosCasos: UILabel!
     @IBOutlet weak var ultimosAnos: UILabel!
     @IBOutlet weak var casoPorKM: UILabel!
+    @IBOutlet weak var risco: UILabel!
     
     var bairroCidadeV: String!
     var ultimosCasosV: String!
@@ -43,10 +44,30 @@ class TelaGraficosViewController: UIViewController {
         var frame = barraTermometro.frame
         print(frame.size.height)
         
-        frame.size.height = frame.size.height * 0
+        let fator = CGFloat(Double(ultimosAnosV)!/100.0)
+        frame.origin.y = frame.origin.y + ((1 - fator)*frame.size.height)
+        frame.size.height = frame.size.height * fator
+
+        if(fator < 1.0/3){
+            barraTermometro.backgroundColor = UIColor.greenColor()
+            risco.textColor = UIColor.greenColor()
+            risco.text = "RISCO BAIXO"
+        }else if (fator < 2.0/3){
+            barraTermometro.backgroundColor = UIColor.greenColor()
+            risco.textColor = UIColor.greenColor()
+            risco.text = "RISCO MÉDIO"
+        }else{
+            barraTermometro.backgroundColor = UIColor.greenColor()
+            risco.textColor = UIColor.greenColor()
+            risco.text = "RISCO ALTA"
+        }
+        print(frame.size.height)
+    
       
         barraTermometro.frame = frame
         barraTermometro.setNeedsLayout()
+        
+        
     }
     
     func mudarLabels(){
