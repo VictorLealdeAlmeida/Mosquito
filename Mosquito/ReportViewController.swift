@@ -35,8 +35,24 @@ class ReportViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         let touchLocation = sender.locationInView(mapaRep)
         let locationCoordinate = mapaRep.convertPoint(touchLocation, toCoordinateFromView: mapaRep)
         print("Tapped at lat: \(locationCoordinate.latitude) long: \(locationCoordinate.longitude)")
+        
+        let startCoord = CLLocationCoordinate2DMake(locationCoordinate.latitude,locationCoordinate.longitude);
+        let adjustedRegion = mapaRep.regionThatFits(MKCoordinateRegionMakeWithDistance(startCoord, 1000, 1000))
+        mapaRep.setRegion(adjustedRegion, animated: true)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = startCoord
+        mapaRep.addAnnotation(annotation)
+        
+
+            
+        let alert = UIAlertController(title: "Confirma denuncia no local?", message: "Seu relato é fundamental", preferredStyle: .Alert)
+        self.presentViewController(alert, animated: true, completion: nil)
+        let action = UIAlertAction(title: "Confirmar", style: UIAlertActionStyle.Default, handler: nil)
+        
+        alert.addAction(action)
+         annotation.title = "Denuncia registrada"
     }
 }
-    
+
     
 
