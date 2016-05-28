@@ -90,6 +90,12 @@ class mapaAgoraViewController: UIViewController, MKMapViewDelegate, CLLocationMa
             return annotationView!
     }
     
+    func mapView(mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let ac = UIAlertController(title: "Mensagem", message: "O balãozinho pode disparar uma ação", preferredStyle: .Alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
+            presentViewController(ac, animated: true, completion: nil)
+    }
+    
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let locationArray = locations as NSArray
         let locationObj = locationArray.lastObject as! CLLocation
